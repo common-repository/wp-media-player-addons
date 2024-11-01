@@ -1,0 +1,981 @@
+.wmp-player .mejs-container,
+.wmp-playlist .mejs-container,
+.wmp-player .mejs-container .mejs-controls,
+.wmp-playlist .mejs-container .mejs-controls,
+.wmp-player .mejs-embed,
+.wmp-playlist .mejs-embed,
+.wmp-player .mejs-embed body,
+.wmp-playlist .mejs-embed body {
+  background: none;
+}
+.wmp-player .mejs-container a,
+.wmp-playlist .mejs-container a,
+.wmp-player .mejs-container .mejs-controls a,
+.wmp-playlist .mejs-container .mejs-controls a,
+.wmp-player .mejs-embed a,
+.wmp-playlist .mejs-embed a,
+.wmp-player .mejs-embed body a,
+.wmp-playlist .mejs-embed body a {
+  border: none;
+}
+.wmp-player *,
+.wmp-playlist *,
+.wmp-player *:hover,
+.wmp-playlist *:hover,
+.wmp-player *:focus,
+.wmp-playlist *:focus {
+  outline: none !important;
+}
+.wmp-player .wp-playlist.wmp-main-playlist,
+.wmp-playlist .wp-playlist.wmp-main-playlist,
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode {
+  background: #2f3238;
+}
+.wmp-player.color-skin .wp-playlist.wmp-main-playlist,
+.wmp-playlist.color-skin .wp-playlist.wmp-main-playlist,
+.wmp-player.color-skin .mejs-container.wmp-main-player.wp-audio-shortcode,
+.wmp-playlist.color-skin .mejs-container.wmp-main-player.wp-audio-shortcode {
+  background-color: #2b5876;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2b5876), color-stop(100% #4e4376));
+  background-image: -webkit-linear-gradient(top, #2b5876 0%, #4e4376 100%);
+  background-image: -moz-linear-gradient(top, #2b5876 0%, #4e4376 100%);
+  background-image: -ms-linear-gradient(top, #2b5876 0%, #4e4376 100%);
+  background-image: -o-linear-gradient(top, #2b5876 0%, #4e4376 100%);
+  background-image: linear-gradient(top, #2b5876 0%, #4e4376 100%);
+}
+.wmp-player .mejs-captions-text,
+.wmp-playlist .mejs-captions-text {
+  padding: 5px 5px;
+  line-height: 30px;
+  background: rgba(20, 20, 20, 0.8);
+  white-space: pre-wrap;
+  font-size: 15px !important;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.wmp-player .mejs-container-fullscreen .mejs-captions-text,
+.wmp-playlist .mejs-container-fullscreen .mejs-captions-text {
+  line-height: 40px;
+  font-size: 23px !important;
+}
+.wmp-player .mejs-button button,
+.wmp-playlist .mejs-button button {
+  font-size: 15px !important;
+  background: none !important;
+}
+.wmp-player .mejs-button button:before,
+.wmp-playlist .mejs-button button:before {
+  vertical-align: top;
+  font-size: inherit;
+  font-family: 'wmp';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 3px;
+}
+.wmp-player .mejs-button.mejs-play button:before,
+.wmp-playlist .mejs-button.mejs-play button:before {
+  content: "\f109";
+}
+.wmp-player .mejs-button.mejs-pause button:before,
+.wmp-playlist .mejs-button.mejs-pause button:before {
+  content: "\f106";
+}
+.wmp-player .mejs-button.mejs-mute button:before,
+.wmp-playlist .mejs-button.mejs-mute button:before {
+  content: "\ea27";
+}
+.wmp-player .mejs-button.mejs-unmute button:before,
+.wmp-playlist .mejs-button.mejs-unmute button:before {
+  content: "\ea2a";
+}
+.wmp-player .mejs-button.mejs-loop-button button:before,
+.wmp-playlist .mejs-button.mejs-loop-button button:before {
+  content: "\f10b";
+}
+.wmp-player .mejs-button.mejs-shuffle-button button:before,
+.wmp-playlist .mejs-button.mejs-shuffle-button button:before {
+  content: "\f104";
+}
+.wmp-player .mejs-button.mejs-fullscreen-button button:before,
+.wmp-playlist .mejs-button.mejs-fullscreen-button button:before {
+  content: "\f10a";
+}
+.wmp-player .mejs-button.mejs-fullscreen-button.mejs-unfullscreen button:before,
+.wmp-playlist .mejs-button.mejs-fullscreen-button.mejs-unfullscreen button:before {
+  content: "\f107";
+}
+.wmp-player .mejs-button.mejs-captions-button button:before,
+.wmp-playlist .mejs-button.mejs-captions-button button:before {
+  content: "\e902";
+}
+.wmp-player .mejs-button.wp-playlist-next button:before,
+.wmp-playlist .mejs-button.wp-playlist-next button:before {
+  content: "\f101";
+}
+.wmp-player .mejs-button.wp-playlist-prev button:before,
+.wmp-playlist .mejs-button.wp-playlist-prev button:before {
+  content: "\e900";
+}
+.wmp-player .mejs-container.wmp-main-player .mejs-layers .mejs-overlay .mejs-overlay-loading,
+.wmp-playlist .mejs-container.wmp-main-player .mejs-layers .mejs-overlay .mejs-overlay-loading,
+.wmp-player .mejs-container.wmp-main-video-player .mejs-layers .mejs-overlay .mejs-overlay-loading,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-layers .mejs-overlay .mejs-overlay-loading,
+.wmp-player .mejs-container.wmp-main-player .mejs-layers .mejs-overlay .mejs-overlay-error,
+.wmp-playlist .mejs-container.wmp-main-player .mejs-layers .mejs-overlay .mejs-overlay-error,
+.wmp-player .mejs-container.wmp-main-video-player .mejs-layers .mejs-overlay .mejs-overlay-error,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-layers .mejs-overlay .mejs-overlay-error {
+  width: 40px;
+  height: 40px;
+  margin: -20px;
+  position: relative;
+  border-radius: 3px;
+  background: #222;
+  background: rgba(0, 0, 0, 0.5);
+}
+.wmp-player .mejs-container.wmp-main-player .mejs-layers .mejs-overlay .mejs-overlay-error,
+.wmp-playlist .mejs-container.wmp-main-player .mejs-layers .mejs-overlay .mejs-overlay-error,
+.wmp-player .mejs-container.wmp-main-video-player .mejs-layers .mejs-overlay .mejs-overlay-error,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-layers .mejs-overlay .mejs-overlay-error {
+  line-height: 40px;
+  text-align: center;
+  color: #ffcc0b;
+  left: 50%;
+  top: 50%;
+  font-size: 0;
+}
+.wmp-player .mejs-container.wmp-main-player .mejs-layers .mejs-overlay .mejs-overlay-error:before,
+.wmp-playlist .mejs-container.wmp-main-player .mejs-layers .mejs-overlay .mejs-overlay-error:before,
+.wmp-player .mejs-container.wmp-main-video-player .mejs-layers .mejs-overlay .mejs-overlay-error:before,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-layers .mejs-overlay .mejs-overlay-error:before {
+  content: "\e901";
+  vertical-align: top;
+  font-size: 20px;
+  font-family: 'wmp';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 3px;
+}
+.wmp-player .mejs-container.wmp-main-player .mejs-layers .mejs-overlay .mejs-overlay-loading span,
+.wmp-playlist .mejs-container.wmp-main-player .mejs-layers .mejs-overlay .mejs-overlay-loading span,
+.wmp-player .mejs-container.wmp-main-video-player .mejs-layers .mejs-overlay .mejs-overlay-loading span,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-layers .mejs-overlay .mejs-overlay-loading span {
+  background: none;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  -webkit-animation: WMPspinner 3s linear infinite;
+  -moz-animation: WMPspinner 3s linear infinite;
+  -ms-animation: WMPspinner 3s linear infinite;
+  -o-animation: WMPspinner 3s linear infinite;
+  animation: WMPspinner 3s linear infinite;
+}
+.wmp-player .mejs-container.wmp-main-player .mejs-layers .mejs-overlay .mejs-overlay-loading span:before,
+.wmp-playlist .mejs-container.wmp-main-player .mejs-layers .mejs-overlay .mejs-overlay-loading span:before,
+.wmp-player .mejs-container.wmp-main-video-player .mejs-layers .mejs-overlay .mejs-overlay-loading span:before,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-layers .mejs-overlay .mejs-overlay-loading span:before {
+  content: "\e97b";
+  vertical-align: top;
+  font-size: inherit;
+  font-family: 'wmp';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 3px;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode {
+  max-width: 600px;
+  width: auto !important;
+  margin: auto;
+  margin-bottom: 30px;
+  height: auto !important;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 30px;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.15) 0px -2px 0px 2px;
+  box-shadow: inset rgba(0, 0, 0, 0.15) 0px -2px 0px 2px;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner {
+  position: relative;
+  top: -3px;
+  padding-bottom: 30px;
+  padding-left: 105px;
+  height: 90px !important;
+}
+@media (max-width: 991px) {
+  .wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner,
+  .wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner {
+    padding-left: 0;
+    padding-top: 105px;
+  }
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-layers .mejs-poster,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-layers .mejs-poster {
+  display: block !important;
+  background-size: cover;
+  width: 90px !important;
+  height: 90px !important;
+  border-radius: 2px;
+  top: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 1px 1px 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.19) 1px 1px 0 1px;
+}
+@media (max-width: 991px) {
+  .wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-layers .mejs-poster,
+  .wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-layers .mejs-poster {
+    left: 50%;
+    margin-left: -45px !important;
+  }
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-layers .mejs-track-title,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-layers .mejs-track-title {
+  color: #fff;
+  margin: 0 0 5px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: none;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-layers .mejs-track-metadata,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-layers .mejs-track-metadata {
+  padding: 0;
+  margin: 0 0 15px;
+  line-height: 15px;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-layers .mejs-track-metadata small,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-layers .mejs-track-metadata small {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.75);
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls {
+  position: relative;
+  padding-top: 26px;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail {
+  top: -10px;
+  height: 20px;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail,
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100% !important;
+  z-index: 11;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider {
+  top: 0;
+  height: 100%;
+  background: none;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider:after,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 9px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  -webkit-transition: all ease-out 0.1s;
+  -moz-transition: all ease-out 0.1s;
+  -o-transition: all ease-out 0.1s;
+  -ms-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-buffering,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-buffering,
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-current,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-current {
+  z-index: 1;
+  top: 9px;
+  height: 2px;
+  -webkit-transition: all ease-out 0.1s;
+  -moz-transition: all ease-out 0.1s;
+  -o-transition: all ease-out 0.1s;
+  -ms-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-loaded {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-current,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-current {
+  background: #fff;
+  border-radius: 10px;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-handle,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-handle {
+  display: block;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: -8px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 2;
+  border: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 0 10px -2px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 0 10px -2px;
+  -webkit-transition: all ease-out 0.1s;
+  -moz-transition: all ease-out 0.1s;
+  -o-transition: all ease-out 0.1s;
+  -ms-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-float,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-float {
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  width: auto;
+  height: auto;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-float .mejs-time-float-current,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-float .mejs-time-float-current {
+  margin: 0;
+  position: static;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-float .mejs-time-float-corner,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-float .mejs-time-float-corner {
+  border-top-color: rgba(0, 0, 0, 0.6);
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-buffering,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-buffering,
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-current,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-current {
+  top: 6px;
+  height: 8px;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider:after,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider:after {
+  top: 6px;
+  height: 8px;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-handle,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-handle {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-button button,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-button button {
+  color: rgba(0, 0, 0, 0.5);
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-button.mejs-loop-button button,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-button.mejs-loop-button button {
+  color: rgba(0, 0, 0, 0.5);
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-button.mejs-loop-button.mejs-loop-on button,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-button.mejs-loop-button.mejs-loop-on button {
+  color: #fff;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time.mejs-currenttime-container,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time.mejs-currenttime-container,
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time.mejs-duration-container,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time.mejs-duration-container {
+  position: absolute;
+  top: 0;
+  color: #fff;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time.mejs-currenttime-container,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time.mejs-currenttime-container {
+  left: 0;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time.mejs-duration-container,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-time.mejs-duration-container {
+  right: 0;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-volume-button,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-volume-button {
+  float: right;
+  left: -56px;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-horizontal-volume-slider,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-horizontal-volume-slider {
+  float: right;
+  left: 26px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 100%;
+}
+.wmp-player .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+.wmp-playlist .mejs-container.wmp-main-player.wp-audio-shortcode .mejs-inner .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  background: #fff;
+  border-radius: 5px;
+}
+.wmp-player .mejs-container.wmp-main-video-player.wp-video-shortcode,
+.wmp-playlist .mejs-container.wmp-main-video-player.wp-video-shortcode {
+  background: #222222;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls {
+  z-index: 1;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls:after,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70px;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100% rgba(0, 0, 0, 0.25)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%);
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider {
+  top: 0;
+  height: 100%;
+  background: none;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider:after,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 9px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  -webkit-transition: all ease-out 0.1s;
+  -moz-transition: all ease-out 0.1s;
+  -o-transition: all ease-out 0.1s;
+  -ms-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-buffering,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-buffering,
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-current,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-current {
+  z-index: 1;
+  top: 9px;
+  height: 2px;
+  -webkit-transition: all ease-out 0.1s;
+  -moz-transition: all ease-out 0.1s;
+  -o-transition: all ease-out 0.1s;
+  -ms-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-loaded {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-current,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-current {
+  background: #fff;
+  border-radius: 10px;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-handle,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-handle {
+  display: block;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: -8px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 2;
+  border: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 0 10px -2px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 0 10px -2px;
+  -webkit-transition: all ease-out 0.1s;
+  -moz-transition: all ease-out 0.1s;
+  -o-transition: all ease-out 0.1s;
+  -ms-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-float,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-float {
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  width: auto;
+  height: auto;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-float .mejs-time-float-current,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-float .mejs-time-float-current {
+  margin: 0;
+  position: static;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-float .mejs-time-float-corner,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-float .mejs-time-float-corner {
+  border-top-color: rgba(0, 0, 0, 0.6);
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-buffering,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-buffering,
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-current,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-current {
+  top: 6px;
+  height: 8px;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider:after,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider:after {
+  top: 6px;
+  height: 8px;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-handle,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-handle {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button button,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button button {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.75);
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-volume-button .mejs-volume-slider,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-volume-button .mejs-volume-slider {
+  border: none;
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-volume-button .mejs-volume-slider .mejs-volume-handle,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-volume-button .mejs-volume-slider .mejs-volume-handle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -5px;
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 0 10px -2px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 0 10px -2px;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button {
+  position: static;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button.mejs-captions-enabled button,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button.mejs-captions-enabled button {
+  color: #fff;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button .mejs-captions-selector,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button .mejs-captions-selector {
+  height: auto !important;
+  width: auto;
+  right: 30px;
+  bottom: 100%;
+  border-radius: 3px;
+  padding: 5px 10px 10px;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button .mejs-captions-selector ul li,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button .mejs-captions-selector ul li {
+  cursor: pointer;
+  margin-bottom: 0;
+  color: #fff;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button .mejs-captions-selector ul li:last-child,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button .mejs-captions-selector ul li:last-child {
+  margin-bottom: 0;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button .mejs-captions-selector ul li input,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button .mejs-captions-selector ul li input {
+  cursor: pointer;
+  margin: 7px 0 0;
+  margin-right: 10px;
+  background: none;
+  height: 10px;
+  width: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button .mejs-captions-selector ul li input:checked,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button .mejs-captions-selector ul li input:checked {
+  background: #fff;
+}
+.wmp-player .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button .mejs-captions-selector ul li label,
+.wmp-playlist .mejs-container.wmp-main-video-player .mejs-inner .mejs-controls .mejs-button.mejs-captions-button .mejs-captions-selector ul li label {
+  cursor: pointer;
+  width: auto;
+  color: inherit;
+}
+.wmp-player .wp-playlist.wmp-main-playlist,
+.wmp-playlist .wp-playlist.wmp-main-playlist {
+  padding: 30px;
+  border-radius: 3px;
+  border: none;
+  margin: 30px 0;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.15) 0px -2px 0px 2px;
+  box-shadow: inset rgba(0, 0, 0, 0.15) 0px -2px 0px 2px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-next,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-next,
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-prev,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-prev {
+  cursor: pointer;
+  font-size: 15px;
+  background: none;
+  color: #000;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-item-artist,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-item-artist {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-weight: normal;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-item-album,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-item-album {
+  color: #fff !important;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-caption,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-caption {
+  padding: 0;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-caption .wp-playlist-item-title,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-caption .wp-playlist-item-title {
+  color: #fff;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-current-item img,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-current-item img {
+  background: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 1px 1px 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.19) 1px 1px 0 1px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-tracks,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-tracks {
+  margin-top: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 10px 15px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.08) -1px -1px 0 0px inset, rgba(255, 255, 255, 0.12) 1px 1px 0 0px inset;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 5px 0;
+  border-color: rgba(255, 255, 255, 0.05);
+  background: none;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item:hover,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item:hover {
+  background: none;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item a,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item a {
+  color: inherit;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item a .wp-playlist-item-title,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item a .wp-playlist-item-title {
+  color: inherit;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item.wp-playlist-playing,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item.wp-playlist-playing {
+  color: #fff;
+  font-weight: bold;
+  background: none;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item.wp-playlist-playing a,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item.wp-playlist-playing a {
+  color: inherit;
+}
+.wmp-player .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item .wp-playlist-item-length,
+.wmp-playlist .wp-playlist.wmp-main-playlist .wp-playlist-tracks .wp-playlist-item .wp-playlist-item-length {
+  top: 5px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player {
+  display: table;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls {
+  position: relative;
+  padding-top: 26px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail {
+  top: -10px;
+  height: 20px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail,
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100% !important;
+  z-index: 11;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-float,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-float {
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  width: auto;
+  height: auto;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-float .mejs-time-float-current,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-float .mejs-time-float-current {
+  margin: 0;
+  position: static;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-float .mejs-time-float-corner,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-float .mejs-time-float-corner {
+  border-top-color: rgba(0, 0, 0, 0.6);
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider {
+  top: 0;
+  height: 100%;
+  background: none;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider:after,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 9px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  -webkit-transition: all ease-out 0.1s;
+  -moz-transition: all ease-out 0.1s;
+  -o-transition: all ease-out 0.1s;
+  -ms-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-buffering,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-buffering,
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-current,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-current {
+  z-index: 1;
+  top: 9px;
+  height: 2px;
+  -webkit-transition: all ease-out 0.1s;
+  -moz-transition: all ease-out 0.1s;
+  -o-transition: all ease-out 0.1s;
+  -ms-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-loaded {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-current,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-current {
+  background: #fff;
+  border-radius: 10px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-handle,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total.mejs-time-slider .mejs-time-handle {
+  display: block;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: -8px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 2;
+  border: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 0 10px -2px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 0 10px -2px;
+  -webkit-transition: all ease-out 0.1s;
+  -moz-transition: all ease-out 0.1s;
+  -o-transition: all ease-out 0.1s;
+  -ms-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-buffering,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-buffering,
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-loaded,
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-current,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-current {
+  top: 6px;
+  height: 8px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider:after,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider:after {
+  top: 6px;
+  height: 8px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-handle,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time-rail:hover .mejs-time-total.mejs-time-slider .mejs-time-handle {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-button button,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-button button {
+  color: rgba(0, 0, 0, 0.5);
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-button.mejs-loop-button button,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-button.mejs-loop-button button {
+  color: rgba(0, 0, 0, 0.5);
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-button.mejs-loop-button.mejs-loop-on button,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-button.mejs-loop-button.mejs-loop-on button {
+  color: #fff;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-button.mejs-shuffle-button button,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-button.mejs-shuffle-button button {
+  color: rgba(0, 0, 0, 0.5);
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-button.mejs-shuffle-button.mejs-shuffle-on button,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-button.mejs-shuffle-button.mejs-shuffle-on button {
+  color: #fff;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time.mejs-currenttime-container,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time.mejs-currenttime-container,
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time.mejs-duration-container,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time.mejs-duration-container {
+  position: absolute;
+  top: 0;
+  color: #fff;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time.mejs-currenttime-container,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time.mejs-currenttime-container {
+  left: 0;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time.mejs-duration-container,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-time.mejs-duration-container {
+  right: 0;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-volume-button,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-volume-button {
+  float: right;
+  left: -56px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-horizontal-volume-slider,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-horizontal-volume-slider {
+  float: right;
+  left: 26px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-audio-playlist .mejs-container.wmp-main-player .mejs-inner .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  background: #fff;
+  border-radius: 5px;
+}
+.wmp-player .wp-playlist.wmp-main-playlist.wp-video-playlist .mejs-container,
+.wmp-playlist .wp-playlist.wmp-main-playlist.wp-video-playlist .mejs-container {
+  background: rgba(0, 0, 0, 0.5);
+}
+.wmp-playlist.wmp-compact-playlist .wp-playlist-tracks {
+  display: none !important;
+}
+.wmp-playlist.wmp-compact-playlist .wp-playlist.wmp-main-playlist.wp-video-playlist {
+  padding: 0;
+}
+@-webkit-keyframes WMPspinner {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes WMPspinner {
+  to {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes WMPspinner {
+  to {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes WMPspinner {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

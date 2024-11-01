@@ -1,0 +1,67 @@
+.wmp-icon-closed-caption-logo {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe902;');
+}
+.wmp-icon-previous {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe900;');
+}
+.wmp-icon-exit-fullscreen {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf107;');
+}
+.wmp-icon-fullscreen {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf10a;');
+}
+.wmp-icon-play {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf109;');
+}
+.wmp-icon-pause {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf106;');
+}
+.wmp-icon-next {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf101;');
+}
+.wmp-icon-repeat {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf10b;');
+}
+.wmp-icon-vol-full {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf102;');
+}
+.wmp-icon-vol-half {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf105;');
+}
+.wmp-icon-vol-cross {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf103;');
+}
+.wmp-icon-vol-low {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf108;');
+}
+.wmp-icon-shuffle {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf104;');
+}
+.wmp-icon-cc {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf20a;');
+}
+.wmp-icon-closed_caption {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe01c;');
+}
+.wmp-icon-warning {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe901;');
+}
+.wmp-icon-spinner2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe97b;');
+}
+.wmp-icon-volume-high {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea26;');
+}
+.wmp-icon-volume-medium {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea27;');
+}
+.wmp-icon-volume-low {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea28;');
+}
+.wmp-icon-volume-mute {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea29;');
+}
+.wmp-icon-volume-cross {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea2a;');
+}
+
